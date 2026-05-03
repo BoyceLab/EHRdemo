@@ -4,11 +4,11 @@
 site_name: ARC Clinical Browser
 site_description: A reproducible, local-first ETL and visualization pipeline for patient-directed SMART on FHIR clinical records — public demo from ALS Therapy Development Institute.
 site_author: ALS Therapy Development Institute
-site_url: https://YOUR-USERNAME.github.io/YOUR-REPO/
+site_url: https://boycelab.github.io/EHRdemo/
 
 # Repository (shown as a link in the top right)
-repo_name: YOUR-USERNAME/YOUR-REPO
-repo_url: https://github.com/YOUR-USERNAME/YOUR-REPO
+repo_name: BoyceLab/EHRdemo
+repo_url: BoyceLab/EHRdemo
 edit_uri: edit/main/docs/
 
 copyright: >
