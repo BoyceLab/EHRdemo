@@ -1,0 +1,274 @@
+/* =============================================================
+   ALS TDI brand overrides for MkDocs Material theme
+   =============================================================
+   Catalyst Purple:  #93358C  (primary brand)
+   Foundation Navy:  #1C355E  (secondary brand, headings)
+   Purple Bold:      #701F61
+   Purple Light:     #EDD6E4
+   Paper:            #F5F1E8
+   Ink:              #1A1A1A
+*/
+
+/* Light mode brand colors */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color:           #1C355E;       /* navy header */
+  --md-primary-fg-color--light:    #2B4877;
+  --md-primary-fg-color--dark:     #14253F;
+  --md-primary-bg-color:           #FFFFFF;
+  --md-primary-bg-color--light:    #FFFFFFcc;
+
+  --md-accent-fg-color:            #93358C;       /* purple links/buttons */
+  --md-accent-fg-color--transparent: rgba(147, 53, 140, 0.1);
+  --md-accent-bg-color:            #FFFFFF;
+  --md-accent-bg-color--light:     #FFFFFFcc;
+
+  --md-typeset-a-color:            #93358C;       /* purple links */
+  --md-default-bg-color:           #FFFFFF;
+  --md-default-fg-color:           #1A1A1A;
+  --md-default-fg-color--light:    #555555;
+  --md-default-fg-color--lighter:  #888888;
+
+  --md-code-bg-color:              #F4F0F8;       /* faint purple tint */
+  --md-code-fg-color:              #1C355E;
+}
+
+/* Dark mode brand colors */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:           #14253F;
+  --md-primary-fg-color--light:    #1C355E;
+  --md-primary-fg-color--dark:     #0A1525;
+
+  --md-accent-fg-color:            #B85AB0;       /* lighter purple in dark mode */
+  --md-accent-fg-color--transparent: rgba(184, 90, 176, 0.15);
+
+  --md-typeset-a-color:            #C266BC;       /* even lighter for contrast */
+  --md-default-bg-color:           #14253F;
+  --md-default-fg-color:           #E8E8E8;
+
+  --md-code-bg-color:              #0E1A30;
+  --md-code-fg-color:              #C266BC;
+}
+
+/* === Top header / banner === */
+.md-header {
+  background-color: var(--md-primary-fg-color);
+  border-bottom: 3px solid #93358C;   /* purple accent line under navy bar */
+  box-shadow: 0 2px 12px rgba(28, 53, 94, 0.15);
+}
+
+.md-header__title {
+  font-family: 'Fraunces', 'Times New Roman', serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* Tab nav under the header */
+.md-tabs {
+  background-color: var(--md-primary-fg-color);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.md-tabs__link {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 600;
+  opacity: 0.85;
+}
+.md-tabs__link--active,
+.md-tabs__link:hover {
+  opacity: 1;
+}
+
+/* Headings */
+.md-typeset h1 {
+  font-family: 'Fraunces', 'Times New Roman', serif;
+  font-weight: 600;
+  color: #1C355E;
+  letter-spacing: -0.01em;
+}
+.md-typeset h2 {
+  font-family: 'Fraunces', 'Times New Roman', serif;
+  font-weight: 600;
+  color: #93358C;
+  border-bottom: 1px solid rgba(147, 53, 140, 0.2);
+  padding-bottom: 0.3em;
+  margin-top: 2em;
+}
+.md-typeset h3 {
+  color: #1C355E;
+  font-weight: 700;
+}
+
+/* Body links */
+.md-typeset a {
+  color: #93358C;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(147, 53, 140, 0.3);
+  transition: border-color 0.15s, color 0.15s;
+}
+.md-typeset a:hover {
+  color: #701F61;
+  border-bottom-color: #701F61;
+}
+
+/* Code blocks: subtle purple tint */
+.md-typeset code {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85em;
+  background-color: rgba(147, 53, 140, 0.08);
+  color: #1C355E;
+  padding: 1px 6px;
+  border-radius: 3px;
+  border: none;
+}
+[data-md-color-scheme="slate"] .md-typeset code {
+  background-color: rgba(184, 90, 176, 0.15);
+  color: #C266BC;
+}
+
+/* Admonitions: re-tint to brand */
+.md-typeset .admonition,
+.md-typeset details {
+  border-left-color: #93358C;
+}
+.md-typeset .admonition-title,
+.md-typeset summary {
+  background-color: rgba(147, 53, 140, 0.08);
+  color: #93358C;
+}
+
+/* Search box */
+.md-search__form {
+  background-color: rgba(255,255,255,0.15);
+}
+.md-search__form:hover {
+  background-color: rgba(255,255,255,0.22);
+}
+
+/* Footer */
+.md-footer {
+  background-color: #1C355E;
+}
+.md-footer-meta {
+  background-color: #14253F;
+}
+.md-copyright {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+
+/* Custom hero section for the home page */
+.als-hero {
+  background: linear-gradient(135deg, #1C355E 0%, #93358C 100%);
+  color: white;
+  padding: 60px 40px;
+  margin: -1.2rem -0.8rem 2rem -0.8rem;
+  border-radius: 0;
+}
+.als-hero h1 {
+  font-family: 'Fraunces', 'Times New Roman', serif;
+  font-size: 3rem !important;
+  font-weight: 600;
+  color: white !important;
+  margin: 0 0 0.2em 0;
+  letter-spacing: -0.02em;
+  border: none !important;
+  padding: 0 !important;
+}
+.als-hero h1 em {
+  color: #EDD6E4;
+  font-style: italic;
+}
+.als-hero p {
+  font-size: 1.15rem;
+  max-width: 720px;
+  opacity: 0.95;
+  line-height: 1.6;
+  margin: 0.8em 0;
+}
+.als-hero .tagline {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  opacity: 0.7;
+  margin-top: 2em;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  padding-top: 1.5em;
+}
+
+/* Demo CTA button */
+.als-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #93358C;
+  color: white !important;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  border: none !important;
+  border-radius: 0;
+  text-decoration: none !important;
+  transition: background 0.15s, transform 0.15s;
+  margin-top: 1em;
+}
+.als-button:hover {
+  background-color: #701F61;
+  color: white !important;
+  transform: translateY(-1px);
+}
+.als-button.secondary {
+  background-color: transparent;
+  border: 1px solid white !important;
+  color: white !important;
+}
+.als-button.secondary:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+
+/* Iframe wrapper for the embedded dashboard */
+.dashboard-embed {
+  width: 100%;
+  height: 800px;
+  border: 1px solid rgba(147, 53, 140, 0.2);
+  border-radius: 4px;
+  margin: 2em 0;
+  box-shadow: 0 4px 24px rgba(28, 53, 94, 0.12);
+}
+
+/* Stat boxes */
+.als-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5em;
+  margin: 2em 0;
+}
+.als-stat {
+  text-align: center;
+  padding: 1.5em 1em;
+  background: rgba(147, 53, 140, 0.04);
+  border-top: 3px solid #93358C;
+}
+.als-stat-num {
+  font-family: 'Fraunces', serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #93358C;
+  line-height: 1;
+  margin-bottom: 0.2em;
+}
+.als-stat-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #1C355E;
+  opacity: 0.85;
+}
