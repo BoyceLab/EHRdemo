@@ -6,7 +6,7 @@ clinical data collected from ARC Study participants via patient-directed
 SMART on FHIR with OAuth 2.0.
 
 > ⚠️ **All data shown here are fully synthetic.** Names, MRNs, dates, and clinical
-> patterns are randomly generated. No real patient information is present..
+> patterns are randomly generated. No real patient information is present.
 
 ---
 
