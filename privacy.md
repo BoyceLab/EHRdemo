@@ -68,15 +68,5 @@ The synthetic data and the demo dashboard are released for educational and refer
 
 The production pipeline source code is **not** included here. To request access for collaboration, contact the ARC Data Team at ALS TDI.
 
-## Reporting concerns
-
-If you believe any content in this repository or on this site contains real patient information that should not be public, please contact us immediately:
-
-- Email: **[ARC data team contact]**
-- ALS Therapy Development Institute, 480 Arsenal Street, Suite 201, Watertown, MA 02472
-
-We take this very seriously. We will investigate any report within one business day.
-
----
 
 *Dedicated to curing ALS.*
