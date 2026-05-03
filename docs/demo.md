@@ -7,7 +7,7 @@ This page embeds the **ARC Clinical Browser** with 50 fully synthetic patients. 
 
 ## Try it
 
-<iframe class="dashboard-embed" src="dashboard_demo.html" title="ARC Clinical Browser Demo"></iframe>
+<iframe class="dashboard-embed" src="../dashboard_demo.html" title="ARC Clinical Browser Demo"></iframe>
 
 [Open in a new tab :material-open-in-new:](dashboard_demo.html){ .als-button target="_blank" }
 
