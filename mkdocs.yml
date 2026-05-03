@@ -8,7 +8,7 @@ site_url: https://boycelab.github.io/EHRdemo/
 
 # Repository (shown as a link in the top right)
 repo_name: BoyceLab/EHRdemo
-repo_url: BoyceLab/EHRdemo
+repo_url: https://github.com/BoyceLab/EHRdemo
 edit_uri: edit/main/docs/
 
 copyright: >
@@ -59,9 +59,7 @@ extra_css:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/YOUR-USERNAME/YOUR-REPO
-    - icon: fontawesome/solid/globe
-      link: https://www.als.net/
+      link: https://github.com/BoyceLab/EHRdemo   
       name: ALS Therapy Development Institute
   generator: false   # hide "Made with Material for MkDocs"
 
