@@ -1,0 +1,97 @@
+# MkDocs configuration for the ARC Clinical Browser public demo site
+# ===================================================================
+
+site_name: ARC Clinical Browser
+site_description: A reproducible, local-first ETL and visualization pipeline for patient-directed SMART on FHIR clinical records — public demo from ALS Therapy Development Institute.
+site_author: ALS Therapy Development Institute
+site_url: https://YOUR-USERNAME.github.io/YOUR-REPO/
+
+# Repository (shown as a link in the top right)
+repo_name: YOUR-USERNAME/YOUR-REPO
+repo_url: https://github.com/YOUR-USERNAME/YOUR-REPO
+edit_uri: edit/main/docs/
+
+copyright: >
+  Copyright © 2026 ALS Therapy Development Institute. Demo data is fully synthetic. Pipeline source code is maintained internally; please contact ALS TDI for collaboration inquiries.
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+  palette:
+    # ALS TDI uses Catalyst Purple #93358C and Foundation Navy #1C355E
+    # Material theme uses named palette colors; we match navy with "indigo" base
+    # and override with custom CSS to land on the actual brand purple/navy.
+    - scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font:
+    text: Inter Tight
+    code: JetBrains Mono
+  logo: assets/logo.svg
+  favicon: assets/favicon.svg
+  icon:
+    repo: fontawesome/brands/github
+
+extra_css:
+  - stylesheets/alstdi-brand.css
+
+# Footer social links
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/YOUR-USERNAME/YOUR-REPO
+    - icon: fontawesome/solid/globe
+      link: https://www.als.net/
+      name: ALS Therapy Development Institute
+  generator: false   # hide "Made with Material for MkDocs"
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - footnotes
+  - toc:
+      permalink: true
+      permalink_title: Anchor link to this section
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      use_pygments: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - Home: index.md
+  - Live Demo: demo.md
+  - About the Pipeline: pipeline.md
+  - For Other Registries: adopt.md
+  - Privacy & Synthetic Data: privacy.md
+
+# Make MkDocs include the dashboard files in the built site
+extra_javascript: []
