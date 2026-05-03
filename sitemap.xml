@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://boycelab.github.io/EHRdemo/</loc>
+         <lastmod>2026-05-03</lastmod>
+    </url>
+    <url>
+         <loc>https://boycelab.github.io/EHRdemo/adopt/</loc>
+         <lastmod>2026-05-03</lastmod>
+    </url>
+    <url>
+         <loc>https://boycelab.github.io/EHRdemo/demo/</loc>
+         <lastmod>2026-05-03</lastmod>
+    </url>
+    <url>
+         <loc>https://boycelab.github.io/EHRdemo/pipeline/</loc>
+         <lastmod>2026-05-03</lastmod>
+    </url>
+    <url>
+         <loc>https://boycelab.github.io/EHRdemo/privacy/</loc>
+         <lastmod>2026-05-03</lastmod>
+    </url>
+</urlset>
